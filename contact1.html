@@ -1,0 +1,81 @@
+<html>
+<head>
+<title>contact:
+</title>
+<style> 
+#top{background-color:rgb(28,5,27); height:70px;width:1500px;}
+#bottom{height: 350px;width: 900px;float: left;}
+#bot1{height:350px;width: 400px;float:left;}
+#bot2{height:350px;width: 300px;float:right;}
+ul{margin:0;padding:10px 0px;width:1500px;}
+li{display:inline;margin: 20px;}
+.l1{color:white;}
+.c1{color:rgb(28,24,57);text-align: right;}
+body{background-image: url("images/b4.jpg");background-size: cover;}
+</style>
+<script>
+     function query(){
+        var query=document.query.query1.value;
+        if(query==null)
+               {window.alert("please enter your query.")}
+        else
+               {window.confirm("your query has been submitted.")}
+         }
+     function validateform(){
+        var name=document.myform.name.value;
+        var phone=document.myform.phone.value;
+        if(name==null)
+              {window.alert("Name can't be blank");return false;}
+        if(name=="")
+              {window.alert("Name can't be blank");return false;}
+        if(phone.length!=10)
+               {window.alert("wrong phone number entered.");return false;}
+        else
+               {return true;}
+    }
+</script>
+
+</head>
+<body>
+<div id="top">
+<ul type="none">
+<li><img src="images/yklogo.jpg" height="40" width="40"></li>
+<li ><a href="file:///C:/Users/victus/Desktop/website/index.html" class="l1">HOME</a></li>
+<li ><a href="file:///C:/Users/victus/Desktop/website/getstarted.html" class="l1">GET STARTED</a></li>
+<li ><a href="file:///C:/Users/victus/Desktop/website/aboutus.html" class="l1">ABOUT US</a></li>
+<li ><a href="file:///C:/Users/victus/Desktop/website/services.html" class="l1">SERVICES</a></li>
+<li><a href="file:///C:/Users/victus/Desktop/website/contact1.html" class="l1">CONTACT</a></li>
+</div>
+<div  id="bottom">
+    <div id="bot1">
+        <h1 class="c1">WE WOULD LOVE TO <br>HEAR FROM YOU! </h1><br>
+        <h2 class="c1" >CALL US: <br>7845789300</h2><br>
+        <h3 class="c1" > WRITE TO US:<br>info@ykdesign.com</h3>
+    </div>
+    <form name="myform" onsubmit="return validateform()">
+    <div id="bot2" text-align="left"> 
+
+        <table><h1>
+        <tr><td>NAME:</td><td><input type="text" id="name"></td></tr>
+        <tr><td>EMAIL:</td><td><input type="email" id="email"></td></tr>
+        <tr><td>PHONE:</td><td><input type="tel" id="phone" pattern="[0-9]{10}"></td></tr>
+        <tr><td>ADDRESS:</td><td><input type="text" id="address"></td></tr>
+        <tr><td><input type="submit" value="register" ></td><td><input type="reset"></td></tr></h1>
+        </table>
+    </form>
+    <form name="query" onsubmit="return query()">
+        <table><h1>
+         <tr><td>Queries:</td></tr>
+         <tr><td><input type="text" id="query1"></td></tr>
+         <tr><td><input type="submit" value="submit" ></td><td><input type="reset"></td></tr></h1>
+        </table>
+    </form>
+       <br><br><br><br><br><br><br><br><br><br><br>
+        <img src="images/s1.jpg" height="40" width="40" class="c1">
+        <img src="images/s2.jpg"height="40" width="40">
+        <img src="images/s3.jpg"height="40" width="40">
+        <img src="images/s4.jpg" height="40" width="40">
+    </div>
+</div>
+</body>
+</html>

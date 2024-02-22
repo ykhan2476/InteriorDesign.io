@@ -1,0 +1,8 @@
+
+#top{background-color:rgb(28,5,27); height:70px;width:1500px;}
+body{background-image: url("images/b3.jpg");background-size: cover;}
+ul{margin:0;padding:10px 0px;width:1500px; }
+li{display:inline;margin: 20px;}
+.l1{color:white;}
+#bottom{height:400px;width:1200px;text-align: right;color: aliceblue;}
+ a href{text-decoration: none;}
